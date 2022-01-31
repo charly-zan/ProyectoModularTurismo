@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('partials/head.html')%>
+    </head>
+<body>
+    <%- include ('partials/navigation.html')%>
+    <div class="container row-content" id="discap">
+        <div class="row row-content">
+            <div class="col-12 col-sm-12">
+                <div class="text-center">
+                    <br>
+                    <h3 >Selecciona la discapacidad</h3>
+                    <img src="img/discapacidades.png" class="text-center"  alt="discimg" usemap="#discimg">
+                    <map name="discimg">
+                        <div class="tooltip">
+                            <area target="_blank" alt="escucha" class="tooltip" title="escucha" href="escucha" coords="3,59,54,108,110,57,60,0" shape="poly">
+                            <span class="tooltiptext">Sordos </span>
+                        </div>
+                        <area target="_blank" alt="ciego" title="ciego" href="ciego" coords="64,128,115,174,166,127,116,74" shape="poly">
+                        <area target="_blank" alt="ciego2" title="ciego2" href="ciego2" coords="187,129,237,177,295,125,244,76" shape="poly">
+                        <area target="_blank" alt="silla" title="silla" href="silla" coords="126,59,173,107,230,58,178,6" shape="poly">
+                        <area target="_blank" alt="mental" title="mental" href="mental" coords="251,60,301,110,356,56,306,3" shape="poly">
+                    </map>
+
+                    <br>
+                    <button type="button"  onclick="location.href='/';" class="btn btn-primary  text-center"  href="#"> continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.html')%>
+</html>

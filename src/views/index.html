@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/head.html')%>
+    <audio id="audiologin" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/login.mp3">
+    </audio>
+    <audio id="audioJalisco" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/jalisco.mp3">
+    </audio>
+    <audio id="audioSonora" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/sonora.mp3">
+    </audio>
+    <audio id="audioDurango" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/durango.mp3">
+    </audio>
+    <audio id="audioBajaCalifornia" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/bajaCalifornia.mp3">
+    </audio>
+    <audio id="audioBajaCaliforniaSur" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/bajaCaliforniaSur.mp3">
+    </audio>
+    <audio id="audioChihuahua" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/chihuahua.mp3">
+    </audio>
+    
+</head>
+
+<body>
+    <%- include ('partials/navigation.html')%>
+
+    <header class="jumbotron">
+        <div class="container ">
+            
+                <div class="row ">
+                        <div class="offset-1 col-3 col-md-3">
+                            <button type="button" class="btn btn-primary ">iniciar busqueda</button>
+                        </div>
+                        <div class="col-6 col-md-6">
+                                <input type="text" class="form-control" id="firstsearch" name="firstsearch" placeholder="Comienza a buscar "/>
+                        </div>
+                        <i class="fa fa-search fa-lg align-content-center"></i>   
+                            
+                </div>
+                <div class="row  text-center">
+                    <div class="col-6 col-sm">
+                        <br>
+                        <h3 >Bienvenido a “nombre del proyecto”
+                            tu<br> guía turístico para personas con<br>
+                            capacidades diferentes</h3>
+                            <br>
+                            <button type="button" onclick="location.href='/index1';" class="btn btn-primary  text-center" > continuar</button>
+                    </div>
+                        
+                </div>
+        </div>
+         
+    </header>
+    
+    <%- include ('partials/footer.html')%>
+</body>
+</html>
