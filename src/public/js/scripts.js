@@ -355,7 +355,7 @@ function hidalgoLeave(){
 function hidalgo() {
     var audio = document.getElementById("audioHidalgo");              //codigo del audio
     audio.play();
-    document.getElementById("mapMex").src="img/mapaMeHid.png";
+    document.getElementById("mapMex").src="img/mapaMexHid.png";
 }
 /////////////////morelos////////////
 function morelosLeave(){
