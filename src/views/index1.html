@@ -2,52 +2,165 @@
 <html lang="en">
 <head>
     <%- include ('partials/head.html')%>
+    <audio id="audioSelecEstado" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/seleccionapais.mp3">
+    </audio>
+
+
+    <audio id="audioJalisco" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/jalisco.mp3">
+    </audio>
+    <audio id="audioSonora" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/sonora.mp3">
+    </audio>
+    <audio id="audioDurango" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/durango.mp3">
+    </audio>
+    <audio id="audioBajaCalifornia" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/bajaCalifornia.mp3">
+    </audio>
+    <audio id="audioBajaCaliforniaSur" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/bajaCaliforniaSur.mp3">
+    </audio>
+    <audio id="audioChihuahua" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/chihuahua.mp3">
+    </audio>
+    <audio id="audioSinaloa" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/sinaloa.mp3">
+    </audio>
+    <audio id="audioCoahuila" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/coahuila.mp3">
+    </audio>
+    <audio id="audioNayarit" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/nayarit.mp3">
+    </audio>
+    <audio id="audioColima" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/colima.mp3">
+    </audio>
+    <audio id="audioZacatecas" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/zacatecas.mp3">
+    </audio>
+    <audio id="audioAguascalientes" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/aguascalientes.mp3">
+    </audio>
+    <audio id="audioNuevoLeon" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/nuevoLeon.mp3">
+    </audio>
+    <audio id="audioTamaulipas" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/tamaulipas.mp3">
+    </audio>
+    <audio id="audioMichoacan" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/michoacan.mp3">
+    </audio>
+    <audio id="audioGuerrero" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/guerrero.mp3">
+    </audio>
+    <audio id="audioOaxaca" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/oaxaca.mp3">
+    </audio>
+    <audio id="audioChiapas" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/chiapas.mp3">
+    </audio>
+    <audio id="audioYucatan" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/yucatan.mp3">
+    </audio>
+    <audio id="audioQuintanaRoo" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/quintanaRoo.mp3">
+    </audio>
+    <audio id="audioCampeche" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/campeche.mp3">
+    </audio>
+    <audio id="audioTabasco" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/tabasco.mp3">
+    </audio>
+    <audio id="audioVeracruz" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/veracruz.mp3">
+    </audio>
+    <audio id="audioPuebla" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/puebla.mp3">
+    </audio>
+    <audio id="audioSanLuisPotosi" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/sanLuisPotosi.mp3">
+    </audio>
+    <audio id="audioGuanajuato" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/guanajuato.mp3">
+    </audio>
+    <audio id="audioMexico" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/mexico.mp3">
+    </audio>
+    <audio id="audioQueretaro" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/queretaro.mp3">
+    </audio>
+    <audio id="audioHidalgo" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/hidalgo.mp3">
+    </audio>
+    <audio id="audioMorelos" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/morelos.mp3">
+    </audio>
+    <audio id="audioCDMX" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/cdmx.mp3">
+    </audio>
+    <audio id="audioTlaxcala" class="d-none"  controls>
+        <source type="audio/mp3" src="/audio/tlaxcala.mp3">
+    </audio>
+
 </head>
 <body>
     <%- include ('partials/navigation.html')%>
+    <hr class="my-4">
     <div class="container row-content" id="map">
         <div class="row">
             <div class="col-12 col-sm-12">
                 <div class="text-center">
-                    <h3 class="animate__animated animate__flip">Selecciona el Pais o paises que te gustaría visitar</h3>
-                    <img src="img/mapaMex.png" alt="mapMex" usemap="#mapMex" class=" align-self-center">
+                    <strong><h2 class="animate__animated animate__flip " style="font-size: 40px;">Selecciona tu destino</h2></strong>
+                    <img src="img/mapaMexpp2.png" id="mapMex" alt="mapMex" usemap="#mapMex" class=" align-self-center">
                     <map name="mapMex">
-                        <area target="_blank"   onmouseenter="jalisco()" alt="jalisco" title="jalisco" href="jalisco" coords="804,897,817,885,839,885,862,900,880,906,889,897,904,880,884,855,882,842,922,834,940,815,945,785,962,749,945,747,928,749,915,754,904,764,894,779,870,788,852,788,849,765,859,749,879,737,872,716,852,729,837,714,819,725,827,772,831,797,812,808,799,802,778,800,759,815,746,833,761,880" shape="poly">
-                        <area target="_blank" alt="nayarit" title="nayarit" href="nayarit" coords="758,807,763,784,751,739,736,716,759,704,771,684,784,703,806,713,814,746,821,777,817,800" shape="poly">
-                        <area target="_blank" onmouseenter="bajaCaliforniaSur()" alt="bajacaliforniasur" title="bajacaliforniasur" href="bajacaliforniasur" coords="383,386,314,384,279,389,316,428,347,444,374,462,410,502,403,553,428,577,448,603,484,640,514,673,533,676,547,656,521,613,491,607,480,585,480,558,468,525,445,476,427,439" shape="poly">
-                        <area target="_blank" onmouseenter="bajaCalifornia()" alt="bajacalifornia" title="bajacalifornia" href="bajacalifornia" coords="205,103,301,98,302,194,309,257,337,290,365,351,380,365,317,373,287,315,253,265" shape="poly">
-                        <area target="_blank" alt="sinaloa" title="sinaloa" href="sinaloa" coords="733,703,754,681,715,605,695,605,678,577,667,549,673,529,658,504,634,489,632,469,615,454,587,472,559,497,559,514,589,535,619,578,673,625" shape="poly">
-                        <area target="_blank" onmouseenter="sonora()" alt="sonora" title="sonora" href="sonora" coords="309,156,392,196,400,265,419,313,493,403,528,449,559,472,602,452,578,378,601,375,602,313,609,247,583,227,591,205,483,194,385,144,304,116" shape="poly">
-                        <area target="_blank" onmouseenter="chihuahua()" alt="chihuahua" title="chihuahua" href="chihuahua" coords="650,497,614,449,601,426,581,386,604,371,607,249,594,227,596,205,627,204,629,184,713,177,747,207,781,247,805,293,853,325,864,340,836,393,846,466,824,471,806,486,781,481,771,474,735,469,716,482,698,517,677,532" shape="poly">
-                        <area target="_blank" onmouseenter="durango()" alt="durango" title="durango" href="durango" coords="811,699,784,697,766,675,738,657,730,624,718,603,698,601,687,581,677,568,672,526,692,518,700,505,715,483,728,463,743,463,761,470,779,473,793,477,806,477,837,465,856,473,864,498,865,521,857,546,869,559,884,571,897,563,904,574,895,591,869,594,856,601,846,614" shape="poly">
-                        <area target="_blank" alt="coahuila" title="coahuila" href="coachuila" coords="985,588,958,586,937,574,905,566,884,571,867,559,864,540,867,516,867,493,857,473,846,442,841,414,844,395,854,377,867,347,884,337,892,313,915,299,943,296,975,298,985,326,1001,337,1015,366,1036,392,1041,409,1031,412,1013,424,1003,442,993,453,1005,458,988,482,985,491,996,511,1003,531,1023,549,1008,554,1005,570" shape="poly">
-                        <area target="_blank" alt="nuevo leon" title="nuevo leon" href="nuevo leon" coords="996,591,1009,622,1016,652,1027,657,1044,649,1054,636,1064,626,1065,601,1059,583,1067,573,1088,559,1103,549,1113,535,1113,510,1100,500,1090,493,1072,482,1055,465,1047,440,1044,420,1022,407,1014,417,1004,424,1001,435,1006,452,987,465,987,480,986,500,1001,513,1007,526,1014,543,1006,563" shape="poly">
-                        <area target="_blank" alt="zacatecas" title="zacatecas" href="zacatecas" coords="890,780,857,788,856,763,875,741,877,725,849,722,849,707,837,695,824,720,814,723,826,690,839,654,852,629,874,614,897,611,907,597,915,572,947,577,975,589,990,599,965,620,943,640,928,658,927,691,947,701,958,701,968,716,958,729,943,734,927,718,912,719,902,732,900,751" shape="poly">
-                        <area target="_blank" alt="sanluispotosi" title="sanluispotosi" href="sanluispotosi" coords="1000,605,1010,651,1031,665,1041,681,1048,698,1071,701,1097,714,1119,716,1124,736,1119,751,1119,767,1104,774,1092,774,1082,759,1069,764,1054,764,1031,759,1013,752,998,757,978,741,973,718,963,704,953,696,935,683,932,666" shape="poly">
-                        <area target="_blank" alt="tamaulipas" title="tamaulipas" href="tamaulipas" coords="1145,720,1097,710,1071,706,1044,693,1034,667,1044,650,1061,637,1064,612,1064,589,1087,569,1112,551,1109,511,1089,499,1064,486,1053,464,1049,433,1051,418,1068,448,1082,468,1099,486,1125,496,1147,506,1167,511,1182,527,1165,587,1157,669,1149,698" shape="poly">
-                        <area target="_blank" alt="colima" title="colima" href="colima" coords="842,926,857,911,857,897,841,888,824,887,807,888,804,903,822,911" shape="poly">
-                        <area target="_blank" alt="michoacan" title="michoacan" href="michoacan" coords="925,973,857,941,865,915,895,901,910,893,907,868,895,853,905,840,921,830,936,830,950,832,965,835,984,843,1001,848,1019,848,1032,848,1044,863,1037,890,1014,916,1011,936,988,933,974,933,955,933,947,946,938,955" shape="poly">
-                        <area target="_blank" alt="guanajuato" title="guanajuato" href="guanajuato" coords="1018,845,978,847,945,830,938,810,952,781,958,766,963,751,986,747,1006,754,1021,757,1044,764,1056,771,1039,785,1028,797,1021,800,1021,815,1021,829" shape="poly">
-                        <area target="_blank" alt="queretaro" title="queretaro" href="queretaro" coords="1031,849,1054,827,1072,806,1087,784,1090,768,1082,758,1062,763,1051,776,1041,791,1021,802,1016,817,1021,834" shape="poly">
-                        <area target="_blank" alt="guerrero" title="guerrero" href="guerrero" coords="948,968,927,963,950,938,975,933,1005,940,1013,921,1024,928,1029,943,1059,931,1072,930,1092,948,1124,958,1135,974,1142,998,1157,1022,1145,1034,1142,1051,1124,1059,1011,1019,973,999" shape="poly">
-                        <area target="_blank" alt="mexico" title="mexico" href="Mexico" coords="1039,855,1039,870,1031,895,1019,908,1019,920,1026,935,1038,935,1061,930,1069,923,1081,905,1094,900,1107,900,1116,900,1119,875,1119,863,1102,855,1081,853,1061,842,1044,842" shape="poly">
-                        <area target="_blank" alt="morelos" title="morelos" href="morelos" coords="1084,942,1072,922,1084,903,1106,902,1114,928,1107,940" shape="poly">
-                        <area target="_blank" alt="idalgo" title="idalgo" href="idalgo" coords="1122,865,1137,865,1147,847,1144,830,1147,812,1137,819,1124,822,1127,805,1139,794,1140,777,1122,774,1101,777,1079,789,1071,809,1054,832,1069,848,1086,850,1104,857" shape="poly">
-                        <area target="_blank" alt="veracruz" title="veracruz" href="veracruz" coords="1161,723,1181,768,1206,814,1247,859,1256,894,1294,922,1334,934,1377,952,1398,988,1382,1005,1358,1003,1329,997,1310,980,1287,980,1279,967,1277,955,1256,944,1241,924,1233,935,1216,935,1198,917,1198,899,1208,889,1201,882,1198,869,1198,849,1191,839,1171,839,1176,824,1165,806,1158,814,1135,821,1141,799,1145,788,1138,776,1123,755,1127,735,1135,725" shape="poly">
-                        <area target="_blank" alt="puebla" title="puebla" href="puebla" coords="1157,890,1135,893,1122,888,1109,908,1109,933,1119,951,1139,963,1157,963,1185,956,1203,950,1223,943,1195,921,1190,898,1190,883,1190,873,1190,848,1188,835,1174,837,1169,829,1165,812,1154,802,1152,824,1147,830,1144,852,1150,863,1162,875,1167,885" shape="poly">
-                        <area target="_blank" alt="oaxaca" title="oaxaca" href="oaxaca" coords="1386,1004,1388,1022,1378,1052,1349,1062,1328,1056,1306,1074,1280,1087,1243,1094,1204,1080,1164,1075,1142,1062,1151,1032,1157,1014,1142,989,1141,971,1154,953,1182,955,1220,950,1225,938,1234,925,1252,933,1267,951,1270,971,1298,984,1318,986,1338,994,1361,996" shape="poly">
-                        <area target="_blank" alt="chiapas" title="chiapas" href="chiapas" coords="1374,1052,1395,1072,1452,1127,1480,1145,1480,1124,1483,1105,1500,1072,1513,1061,1574,1054,1576,1032,1490,953,1443,984,1425,956,1410,958,1382,994" shape="poly">
-                        <area target="_blank" alt="tabasco" title="tabasco" href="tabasco" coords="1532,988,1545,988,1545,950,1515,943,1490,945,1479,943,1469,928,1450,915,1378,945,1376,961,1391,973,1406,968,1412,957,1422,955,1432,958,1441,973,1450,986,1474,973,1494,960,1510,958,1522,976,1525,983" shape="poly">
-                        <area target="_blank" alt="campeche" title="campeche" href="campeche" coords="1569,947,1551,947,1642,943,1644,895,1639,862,1578,801,1551,776,1564,827,1556,840,1550,858,1526,885,1506,901,1487,905,1467,913,1467,926,1477,938,1495,943,1521,945" shape="poly">
-                        <area target="_blank" alt="yucatan" title="yucatan" href="yucatan" coords="1612,827,1563,782,1559,762,1588,741,1690,716,1712,732,1712,767,1697,779,1647,817,1627,830" shape="poly">
-                        <area target="_blank" alt="quintanaroo" title="quintanaroo" href="quintanaroo" coords="1717,718,1752,718,1747,776,1723,820,1723,835,1715,882,1712,906,1702,892,1685,901,1672,918,1664,933,1642,935,1641,883,1639,858,1622,835,1664,800,1705,774,1714,757" shape="poly">
+                        <area target="" onmouseenter="bajaCaliforniaSur()" onmouseleave ="bajaCaliforniaSurLeave()" alt="BajaCaliforniaSur" title="BajaCaliforniaSur" href="/index2" coords="161,349,177,329,156,297,145,299,142,279,119,210,111,199,96,166,60,159,49,164,44,165,37,170,44,176,47,183,55,192,61,201,68,204,77,202,89,225,102,230,107,241,105,247,102,256,99,264,95,274,103,274,130,301,145,320,155,339" shape="poly">
+                        <area target="" onmouseenter="bajaCalifornia()"  onmouseleave ="bajaCaliforniaLeave()" alt="BajaCalifornia" title="BajaCalifornia" href="/index2" coords="1,3,62,5,56,12,52,17,52,26,52,40,50,53,54,61,53,72,54,87,55,94,62,102,69,113,79,130,88,140,95,155,94,162,80,162,62,158,63,141,53,131,40,112,24,98,23,75" shape="poly">
+                        <area target="" onmouseenter="sonora()" onmouseleave ="sonoraLeave()" alt="Sonora" title="Sonora" href="/index2" coords="51,29,61,10,155,61,212,67,215,125,209,165,198,167,200,180,206,188,209,209,210,215,191,228,180,218,171,212,168,204,158,197,152,184,152,177,140,171,126,154,109,115,100,82,99,59" shape="poly">
+                        <area target="" onmouseenter="sinaloa()" onmouseleave ="sinaloaLeave()" alt="Sinaloa" title="Sinaloa" href="/index2" coords="213,212,206,220,196,223,192,226,187,231,182,241,184,250,195,252,204,261,230,295,250,328,263,348,275,357,281,359,286,349,272,320,266,305,256,303,239,269,240,253,237,242,228,237,230,226,223,213" shape="poly">
+                        <area target="" onmouseenter="chihuahua()" onmouseleave ="chihuahuaLeave()" alt="Chihuahua" title="Chihuahua" href="/index2" coords="215,68,232,66,235,54,269,54,290,79,307,95,315,110,320,131,333,137,353,149,335,184,338,225,327,220,320,227,316,233,310,233,300,230,288,230,279,223,271,220,266,230,259,234,258,243,255,255,244,255,238,240,231,236,228,220,220,211,211,210,210,187,198,167,211,167,214,134,219,112,217,91,217,82" shape="poly">
+                        <area target="" onmouseenter="durango()" onmouseleave ="durangoLeave()" alt="Durango" title="Durango" href="/index2" coords="326,220,346,231,349,239,349,250,349,258,346,264,343,273,349,281,360,286,368,279,372,285,372,292,372,298,361,303,352,303,345,307,336,313,333,321,333,328,328,332,323,339,323,347,321,366,315,363,308,360,303,360,296,362,297,352,287,346,278,333,271,319,267,304,261,302,251,291,246,279,241,267,241,258,250,256,257,251,259,241,262,230,266,225,270,218,280,224,288,228,295,233,307,233,313,233" shape="poly">
+                        <area target="" onmouseenter="coahuila()" onmouseleave ="coahuilaLeave()" alt="Coahuila" title="Coahuila" href="/index2" coords="358,151,333,184,339,222,345,233,351,244,348,253,345,266,345,275,348,282,358,284,369,280,378,279,389,283,397,290,408,293,415,302,420,297,421,283,426,277,434,276,432,270,425,264,420,257,413,246,409,237,419,231,429,219,422,213,423,207,428,201,434,196,443,191,442,182,429,167,419,142,398,127,377,126,365,130" shape="poly">
+                        <area target="" onmouseenter="nayarit()" onmouseleave ="nayaritLeave()" alt="Nayarit" title="Nayarit" href="/index2" coords="273,366,277,383,285,397,283,410,279,420,283,424,299,415,307,417,309,424,313,417,314,405,321,405,319,395,318,383,313,376,317,368,311,361,299,360,293,359,297,352,290,348,285,348,283,356,281,361" shape="poly">
+                        <area target="" onmouseenter="jalisco()"  onmouseleave ="jaliscoLeave()" alt="Jalisco" title="Jalisco" href="/index2" coords="297,477,287,471,279,457,274,449,270,436,281,433,284,425,291,421,299,416,307,427,312,422,316,413,315,406,320,402,318,392,315,372,323,368,324,357,330,361,330,368,333,374,339,370,347,372,344,381,340,389,331,395,328,406,332,414,339,410,348,409,359,404,359,396,367,394,377,395,384,390,391,387,394,394,392,400,396,409,381,426,381,435,376,439,365,444,356,448,348,449,344,456,354,457,356,465,360,471,363,476,353,480,343,487,337,487,330,473,320,471,313,474,308,470" shape="poly">
+                        <area target="" onmouseenter="colima()"  onmouseleave ="colimaLeave()" alt="Colima" title="Colima" href="/index2" coords="302,478,315,485,333,499,335,486,336,476,330,470,317,471" shape="poly">
+                        <area target="" onmouseenter="zacatecas()"  onmouseleave ="zacatecasLeave()" alt="Zacatecas" title="Zacatecas" href="/index2" coords="320,364,324,335,334,327,334,317,347,304,356,303,362,303,368,300,375,291,369,283,374,275,381,277,390,280,398,288,405,291,410,297,414,302,411,308,406,314,401,323,377,340,381,357,390,368,401,365,399,386,393,385,385,381,381,372,373,372,357,379,354,386,358,396,358,405,348,407,338,407,332,407,334,394,340,387,346,378,348,371,342,369,335,368,329,364" shape="poly">
+                        <area target="" onmouseenter="aguascalientes()"  onmouseleave ="aguascalientesLeave()" alt="Aguascalientes" title="Aguascalientes" href="/index2" coords="366,391,373,393,380,393,386,386,382,376,375,371,368,373,362,377,355,379,353,388,358,392" shape="poly">
+                        <area target="" onmouseenter="nuevoleon()"  onmouseleave ="nuevoleonLeave()" alt="NuevoLeon" title="NuevoLeon" href="/index2" coords="446,193,446,200,450,212,450,222,458,230,465,241,482,250,484,269,480,277,471,277,465,286,463,292,452,300,456,319,451,324,445,335,441,339,433,342,431,323,425,317,425,306,421,299,422,280,440,278,428,268,420,254,416,244,412,237,425,227,432,220,422,212,430,201,435,193" shape="poly">
+                        <area target="" onmouseenter="tamaulipas()"  onmouseleave ="tamaulipasLeave()" alt="Tamaulipas" title="Tamaulipas" href="/index2" coords="439,342,449,351,446,357,458,361,470,368,490,373,493,378,499,383,507,375,506,360,510,348,507,269,515,271,523,255,520,245,512,244,496,243,464,229,456,203,448,191,445,199,447,206,450,216,456,228,462,237,472,244,483,249,486,265,479,277,468,276,464,289,454,297,457,318,449,326,444,335" shape="poly">
+                        <area target="" onmouseenter="michoacan()"  onmouseleave ="michoacanLeave()" alt="Michoacan" title="Michoacan" href="/index2" coords="334,500,339,510,352,514,375,519,381,510,385,501,392,499,402,499,413,499,423,503,427,494,433,486,436,473,440,459,440,450,432,450,421,450,406,446,403,451,397,444,389,443,381,441,373,439,365,444,358,446,349,448,347,454,355,456,360,459,363,466,365,473,362,479,347,486,338,486" shape="poly">
+                        <area target="" onmouseenter="guerrero()"  onmouseleave ="guerreroLeave()" alt="Guerrero" title="Guerrero" href="/index2" coords="380,521,408,540,440,554,453,561,493,572,504,563,505,550,498,538,495,523,500,516,490,513,483,513,477,510,459,496,452,499,440,502,430,494,430,504,421,505,411,502,398,502,386,502,384,509" shape="poly">
+                        <area target="" onmouseenter="oaxaca()"  onmouseleave ="oaxacaLeave()" alt="Oaxaca" title="Oaxaca" href="/index2" coords="495,574,556,593,605,572,630,571,636,541,605,537,597,529,593,520,585,528,578,531,572,520,572,511,558,505,549,496,548,502,533,513,525,515,518,508,514,512,514,519,504,519,500,523,496,536,501,545,507,552,506,561" shape="poly">
+                        <area target=""  onmouseenter="chiapas()"  onmouseleave ="chiapasLeave()" alt="Chiapas" title="Chiapas" href="/index2" coords="633,574,661,593,672,603,681,607,692,598,706,568,747,565,745,551,713,529,699,512,687,508,679,515,676,524,670,528,660,522,658,512,652,510,648,517,646,524,644,532,637,540,631,553" shape="poly">
+                        <area target="" onmouseenter="yucatan()"  onmouseleave ="yucatanLeave()" alt="Yucatan" title="Yucatan" href="/index2" coords="736,410,745,415,778,450,820,393,820,374,802,370,789,374,770,383,752,389,739,394,733,402" shape="poly">
+                        <area target="" onmouseenter="quintanaRoo()"  onmouseleave ="quintanaRooLeave()" alt="QuintanaRoo" title="QuintanaRoo" href="/index2" coords="779,452,785,499,803,476,808,466,811,461,814,473,816,480,820,489,824,470,825,451,825,438,825,428,824,418,829,403,834,392,836,382,831,369,825,372,821,376,823,384,818,397" shape="poly">
+                        <area target="" onmouseenter="campeche()"  onmouseleave ="campecheLeave()" alt="Campeche" title="Campeche" href="/index2" coords="728,508,781,501,777,449,743,417,733,413,734,423,732,436,727,445,728,456,720,463,713,474,709,483,703,488,695,485,686,480,679,484,681,490,688,496,696,503,707,505" shape="poly">
+                        <area target="" onmouseenter="tabasco()"  onmouseleave ="tabascoLeave()" alt="Tabasco" title="Tabasco" href="/index2" coords="643,526,627,509,643,496,664,492,677,486,687,495,695,500,704,504,720,505,730,511,730,518,730,525,715,528,699,511,688,509,680,515,675,525,665,525,661,513,653,509,651,516,651,523" shape="poly">
+                        <area target=""  onmouseenter="veracruz()"  onmouseleave ="veracruzLeave()" alt="Veracruz" title="Veracruz" href="/index2" coords="625,508,644,530,639,539,610,539,596,529,593,520,579,530,573,521,574,511,562,507,550,497,542,497,534,493,529,488,531,481,534,472,525,465,529,443,523,441,516,443,518,432,509,423,501,429,493,433,493,426,500,419,490,408,490,393,490,380,496,383,507,377,521,396,521,410,526,423,545,444,557,471,572,488,582,495,587,490,602,494,614,506" shape="poly">
+                        <area target=""  onmouseenter="puebla()"  onmouseleave ="pueblaLeave()" alt="Puebla" title="Puebla" href="/index2" coords="522,513,546,501,542,496,536,496,529,496,529,482,531,474,527,469,527,456,529,443,523,441,516,440,516,430,509,424,506,433,501,440,499,450,499,458,509,463,515,469,509,476,501,476,493,472,485,470,486,478,486,487,486,496,484,502,480,505,477,512,485,513,493,511,501,513,509,516,516,509" shape="poly">
+                        <area target=""  onmouseenter="sanLuisPotosi()"  onmouseleave ="sanLuisPotosiLeave()" alt="SanLuisPotosi" title="SanLuisPotosi" href="/index2" coords="378,340,406,317,418,300,425,309,426,320,429,333,429,342,437,343,445,349,445,355,453,359,471,370,486,369,490,381,484,395,477,404,469,398,459,402,450,402,434,394,426,398,416,392,399,389,404,374,401,363,388,366,381,356" shape="poly">
+                        <area target=""  onmouseenter="guanajuato()"  onmouseleave ="guanajuatoLeave()" alt="Guanajuato" title="Guanajuato" href="/index2" coords="408,447,427,451,437,444,429,435,429,425,439,415,450,409,447,399,437,394,430,396,423,398,414,391,404,389,398,390,395,396,394,403,393,409,388,417,383,427,382,438,393,445,396,440,399,447" shape="poly">
+                        <area target=""  onmouseenter="mexico()"  onmouseleave ="mexicoLeave()" alt="Mexico" title="Mexico" href="/index2" coords="458,495,447,499,437,503,431,490,437,476,439,463,444,451,450,443,463,446,464,451,473,453,483,456,486,461,486,475,483,483,477,478,477,466,470,466,467,473,466,481,463,489" shape="poly">
+                        <area target=""  onmouseenter="queretaro()"  onmouseleave ="queretaroLeave()" alt="Queretaro" title="Queretaro" href="/index2" coords="440,448,431,435,430,422,438,416,451,412,452,402,459,402,467,399,472,405,467,411,463,418,457,425,452,436" shape="poly">
+                        <area target=""  onmouseenter="hidalgo()"  onmouseleave ="hidalgoLeave()" alt="Hidalgo" title="Hidalgo" href="/index2" coords="448,438,455,430,460,420,469,412,479,411,480,404,483,397,490,398,492,409,496,417,492,423,490,430,496,431,503,430,506,424,503,441,500,446,498,452,493,459,487,461,479,455,473,450,467,452,457,442" shape="poly">
+                        <area target="" onmouseenter="morelos()"  onmouseleave ="morelosLeave()" alt="Morelos" title="Morelos" href="/index2" coords="461,496,475,504,483,502,483,488,476,482,468,483" shape="poly">
+                        <area target="" onmouseenter="cdmx()"  onmouseleave ="cdmxLeave()" alt="CDMX" title="CDMX" href="/index2" coords="469,481,476,482,477,471,470,469,464,474" shape="poly">
+                        <area target="" onmouseenter="tlaxcala()"  onmouseleave ="tlaxcalaLeave()" alt="Tlaxcala" title="Tlaxcala" href="/index2" coords="493,469,503,479,512,474,509,466,503,461,494,461,487,464" shape="poly">
+
                     </map>
                     <br>
                     <button type="button"  onclick="location.href='/index2';" class="btn btn-primary  text-center"  href="/index2.html"> continuar</button>
                 </div>
+                <hr class="my-4">
             </div>
         </div>
     </div>
+    <script>
+        ///audio index 1
+        var audio = document.getElementById("audioSelecEstado");              //codigo del audio
+        audio.play();
+    </script>
 </body>
     <%- include ('partials/footer.html')%>
 </html>

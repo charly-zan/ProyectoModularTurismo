@@ -1,21 +1,22 @@
 {
-  "name": "turismo",
+  "name": "Turismo",
   "version": "1.0.0",
-  "description": "Prototipo",
-  "main": "index.html",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "start": "node src",
+    "dev": "nodemon src"
   },
-  "author": "Charlyzama",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0"
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "nodemon": "^2.0.15"
   }
 }
